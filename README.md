@@ -2,7 +2,7 @@
   这个界面用来方便我收集乱七八糟资料
 
 
-以下是一些 NLP 方向对 Transformer 模型的递进式改进方案及相关论文：  
+# 以下是一些 NLP 方向对 Transformer 模型的递进式改进方案及相关论文：  
 
 
 1. 改进方案一：Transformer-XL
@@ -28,7 +28,7 @@
 
 ============================
 
-以下是对Transformer-XL、Reformer、Longformer这三个改进方案与上一个相比的优势：
+# 以下是对Transformer-XL、Reformer、Longformer这三个改进方案与上一个相比的优势：
 
 
 1. Transformer - XL 对比原始 Transformer：
@@ -62,7 +62,7 @@
 ===============================
 
 
-以下是 Transformer-XL、Reformer 和 Longformer 的代码链接：  
+# 以下是 Transformer-XL、Reformer 和 Longformer 的代码链接：  
 1. Transformer-XL：
    - 官方代码：https://github.com/kimiyoung/transformer-xl
 2. Reformer：
@@ -76,7 +76,7 @@
 ==========================
 
 
-以下是一些实验来比较 Transformer-XL、Reformer 和 Longformer 这三个模型的改进：  
+# 以下是一些实验来比较 Transformer-XL、Reformer 和 Longformer 这三个模型的改进：  
 
 1. 长序列文本处理能力测试：
    - 实验设计：
