@@ -97,29 +97,29 @@
 - 1. 训练时间：
    - 对于短文本，三个模型的训练时间可能较为接近，可能在几分钟到十几分钟之间。
    - 中等长度文本，Transformer-XL 可能需要几十分钟，Reformer 和 Longformer 可能在半小时左右。
-   - 极长文本，Transformer-XL 可能需要数小时，Reformer 可能需要2~3个小时，Longformer 可能在3~4个小时。                 **文本长度越长 训练时间XL>LONG>RE 越明显**
+   - 极长文本，Transformer-XL 可能需要数小时，Reformer 可能需要2到3个小时，Longformer 可能在3到4个小时。                 **文本长度越长 训练时间XL>LONG>RE 越明显**
 - 2. 内存占用：
    - 短文本，三个模型的内存占用可能在几百 MB 到 1GB 左右。
-   - 中等长度文本，Transformer-XL 可能占用 2GB~3GB，Reformer 和 Longformer 可能在 1.5GB~2.5GB 之间。
-   - 极长文本，Transformer-XL 可能占用 5GB 以上，Reformer 可能占用 3GB~4GB，Longformer 可能占用 4GB 左右。           **内存占用 XL>LONG>RE**
+   - 中等长度文本，Transformer-XL 可能占用 2GB到3GB，Reformer 和 Longformer 可能在 1.5GB到2.5GB 之间。
+   - 极长文本，Transformer-XL 可能占用 5GB 以上，Reformer 可能占用 3GB到4GB，Longformer 可能占用 4GB 左右。           **内存占用 XL>LONG>RE**
 - 3. 困惑度：
    - 短文本，三个模型的困惑度可能在几十到一百左右。
    - 中等长度文本，Transformer-XL 的困惑度可能在一百到一百五十，Reformer 和 Longformer 可能在一百到一百二十。
-   - 极长文本，Transformer-XL 的困惑度可能在150~200，Reformer 的困惑度可能在120~150，Longformer 的困惑度可能在130~160。 **困惑度 XL>LONG>RE**
+   - 极长文本，Transformer-XL 的困惑度可能在150到200，Reformer 的困惑度可能在120到150，Longformer 的困惑度可能在130到160。 **困惑度 XL>LONG>RE**
  
 二、计算效率与资源占用对比实验
  
 - 1.运行时间：
-   - 对于中等长度文本，Transformer-XL 可能需要几十秒，Reformer 和 Longformer 可能在20~30s之间。
+   - 对于中等长度文本，Transformer-XL 可能需要几十秒，Reformer 和 Longformer 可能在20到30s之间。
    - 随着文本长度和复杂度的增加，Transformer-XL 的运行时间可能呈**线性增长**，Reformer 和 Longformer 的增长速度可能相对较慢。
 - 2. CPU 使用率：
    - 在处理中等长度文本时，三个模型的 CPU 使用率可能在 50% 到 70%之间。
-   - 随着数据规模的增加，Transformer-XL 的 CPU 使用率可能会更高，达到 80% ~ 90%，Reformer 和 Longformer 可能在 70% ~ 80%之间。
+   - 随着数据规模的增加，Transformer-XL 的 CPU 使用率可能会更高，达到 80% 到 90%，Reformer 和 Longformer 可能在 70% 到 80%之间。
 - 3. GPU 使用率：
-   - 处理中等长度文本时，三个模型的 GPU 使用率可能在 30% ~ 50%之间。
-   - 随着数据规模的增加，Transformer-XL 的 GPU 使用率可能会更高，达到 60% ~ 70%，Reformer 和 Longformer 可能在 50% ~ 60%之间。
+   - 处理中等长度文本时，三个模型的 GPU 使用率可能在 30% 到 50%之间。
+   - 随着数据规模的增加，Transformer-XL 的 GPU 使用率可能会更高，达到 60% 到 70%，Reformer 和 Longformer 可能在 50% 到 60%之间。
 - 4. 内存占用：
-   - 中等长度文本，Transformer-XL 可能占用 2GB ~ 3GB，Reformer 和 Longformer 可能在 1.5GB ~ 2.5GB 之间。
+   - 中等长度文本，Transformer-XL 可能占用 2GB 到 3GB，Reformer 和 Longformer 可能在 1.5GB 到 2.5GB 之间。
    - 随着数据规模的增加，Transformer-XL 的内存占用可能会更高，Reformer 和 Longformer 的增长速度相对较慢。                        **RE,LONG资源占用和计算效率显然优于XL**
  
 三、下游任务性能评估实验
